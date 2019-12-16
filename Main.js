@@ -28,7 +28,7 @@ export class Main{
     }
     // 定义资源成功加载以后调用的方法
     onResourcesLoaded(map){
-        // console.log(map);
+        // console.log(map); 
         // 将资源保存进变量池中
         // 不put方法保存的原因是：put保存的数据会定期销毁，而使用属性
         // 的方式保存数据是长期存在的，不会定期销毁
