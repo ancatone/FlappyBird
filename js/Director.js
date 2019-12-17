@@ -103,7 +103,7 @@ export class Director{
         this.dataStore.get('birds').draw();
         this.dataStore.get('land').draw();
        this.id = requestAnimationFrame(()=>this.run());
-    //    cancelAnimationFrame();
+    
         }else{
             // alert("游戏结束");
         }

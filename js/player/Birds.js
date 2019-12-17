@@ -18,7 +18,7 @@ export class Birds extends Sprite{
         const birdsX = canvas.width/4;
         this.birdsX = [birdsX,birdsX,birdsX];
         const land = Sprite.getImage('land');
-        const birdsY = (canvas.height-land.height)/2;
+        const birdsY = (canvas.height-land.height)/4;
         this.birdsY = [birdsY,birdsY,birdsY];
         // 每只小鸟的宽高
         this.birdsWidth = [34,34,34];
