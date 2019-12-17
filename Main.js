@@ -4,7 +4,8 @@ import { Background } from "./js/runtime/Background.js";
 import { Director } from "./js/Director.js";
 import { land } from "./js/runtime/Land.js";
 import { Birds } from "./js/player/Birds.js";
-
+import { Score } from "./js/player/Score.js";
+import { StartButton} from './js/player/StartButton.js';
 export class Main{
     constructor(){
         console.log("Main执行了");
@@ -46,7 +47,9 @@ export class Main{
             .put('land',new land())
             .put('pipes',[])   
             .put('birds',new Birds())
-        
+            .put('score',new Score())
+            .put ('startButton',new StartButton())
+
          this.addClick();
         this.director.createPipes();
         this.director.run();
